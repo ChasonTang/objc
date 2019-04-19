@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		188FD9DE2269FE200030726B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD9DD2269FE200030726B /* main.m */; };
 		188FD9F52269FE890030726B /* objc-blocktramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 188FD9F12269FE880030726B /* objc-blocktramps-i386.s */; };
 		188FD9F62269FE890030726B /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 188FD9F22269FE880030726B /* objc-blocktramps-arm64.s */; };
 		188FD9F72269FE890030726B /* objc-blocktramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 188FD9F32269FE890030726B /* objc-blocktramps-arm.s */; };
 		188FD9F82269FE890030726B /* objc-blocktramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 188FD9F42269FE890030726B /* objc-blocktramps-x86_64.s */; };
 		188FD9FB226A05970030726B /* objc-block-trampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 188FD9F92269FF870030726B /* objc-block-trampolines.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		188FDA15226A0DA50030726B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FDA14226A0DA50030726B /* main.m */; };
+		188FDA27226A0DEA0030726B /* libobjc-trampolines.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD9E82269FE4C0030726B /* libobjc-trampolines.dylib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		188FDA28226A0DF70030726B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188FD9D22269FE200030726B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188FD9E72269FE4C0030726B;
+			remoteInfo = "objc-trampolines";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		188FD9D82269FE200030726B /* CopyFiles */ = {
+		188FDA10226A0DA50030726B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,28 +39,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		188FD9DA2269FE200030726B /* objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objc; sourceTree = BUILT_PRODUCTS_DIR; };
-		188FD9DD2269FE200030726B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188FD9E82269FE4C0030726B /* libobjc-trampolines.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libobjc-trampolines.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188FD9F12269FE880030726B /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		188FD9F22269FE880030726B /* objc-blocktramps-arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "objc-blocktramps-arm64.s"; sourceTree = "<group>"; };
 		188FD9F32269FE890030726B /* objc-blocktramps-arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "objc-blocktramps-arm.s"; sourceTree = "<group>"; };
 		188FD9F42269FE890030726B /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		188FD9F92269FF870030726B /* objc-block-trampolines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-block-trampolines.h"; sourceTree = "<group>"; };
+		188FDA12226A0DA50030726B /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		188FDA14226A0DA50030726B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188FDA1D226A0DB90030726B /* libobjc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		188FD9D72269FE200030726B /* Frameworks */ = {
+		188FD9E62269FE4C0030726B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		188FD9E62269FE4C0030726B /* Frameworks */ = {
+		188FDA0F226A0DA50030726B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188FDA1B226A0DB90030726B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188FDA27226A0DEA0030726B /* libobjc-trampolines.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,27 +79,22 @@
 		188FD9D12269FE200030726B = {
 			isa = PBXGroup;
 			children = (
-				188FD9DC2269FE200030726B /* objc */,
 				188FD9E92269FE4C0030726B /* objc-trampolines */,
+				188FDA13226A0DA50030726B /* Demo */,
+				188FDA1E226A0DBA0030726B /* objc */,
 				188FD9DB2269FE200030726B /* Products */,
+				188FDA26226A0DEA0030726B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		188FD9DB2269FE200030726B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				188FD9DA2269FE200030726B /* objc */,
 				188FD9E82269FE4C0030726B /* libobjc-trampolines.dylib */,
+				188FDA12226A0DA50030726B /* Demo */,
+				188FDA1D226A0DB90030726B /* libobjc.dylib */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		188FD9DC2269FE200030726B /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				188FD9DD2269FE200030726B /* main.m */,
-			);
-			path = objc;
 			sourceTree = "<group>";
 		};
 		188FD9E92269FE4C0030726B /* objc-trampolines */ = {
@@ -94,6 +109,28 @@
 			path = "objc-trampolines";
 			sourceTree = "<group>";
 		};
+		188FDA13226A0DA50030726B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				188FDA14226A0DA50030726B /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		188FDA1E226A0DBA0030726B /* objc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		188FDA26226A0DEA0030726B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,26 +142,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		188FDA19226A0DB90030726B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		188FD9D92269FE200030726B /* objc */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 188FD9E12269FE200030726B /* Build configuration list for PBXNativeTarget "objc" */;
-			buildPhases = (
-				188FD9D62269FE200030726B /* Sources */,
-				188FD9D72269FE200030726B /* Frameworks */,
-				188FD9D82269FE200030726B /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = objc;
-			productName = objc;
-			productReference = 188FD9DA2269FE200030726B /* objc */;
-			productType = "com.apple.product-type.tool";
-		};
 		188FD9E72269FE4C0030726B /* objc-trampolines */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188FD9EE2269FE4C0030726B /* Build configuration list for PBXNativeTarget "objc-trampolines" */;
@@ -142,6 +169,41 @@
 			productReference = 188FD9E82269FE4C0030726B /* libobjc-trampolines.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		188FDA11226A0DA50030726B /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188FDA18226A0DA50030726B /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				188FDA0E226A0DA50030726B /* Sources */,
+				188FDA0F226A0DA50030726B /* Frameworks */,
+				188FDA10226A0DA50030726B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 188FDA12226A0DA50030726B /* Demo */;
+			productType = "com.apple.product-type.tool";
+		};
+		188FDA1C226A0DB90030726B /* objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188FDA23226A0DBA0030726B /* Build configuration list for PBXNativeTarget "objc" */;
+			buildPhases = (
+				188FDA19226A0DB90030726B /* Headers */,
+				188FDA1A226A0DB90030726B /* Sources */,
+				188FDA1B226A0DB90030726B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188FDA29226A0DF70030726B /* PBXTargetDependency */,
+			);
+			name = objc;
+			productName = objc;
+			productReference = 188FDA1D226A0DB90030726B /* libobjc.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,10 +213,13 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Warmbloom;
 				TargetAttributes = {
-					188FD9D92269FE200030726B = {
+					188FD9E72269FE4C0030726B = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					188FD9E72269FE4C0030726B = {
+					188FDA11226A0DA50030726B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					188FDA1C226A0DB90030726B = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -171,21 +236,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				188FD9D92269FE200030726B /* objc */,
 				188FD9E72269FE4C0030726B /* objc-trampolines */,
+				188FDA11226A0DA50030726B /* Demo */,
+				188FDA1C226A0DB90030726B /* objc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		188FD9D62269FE200030726B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				188FD9DE2269FE200030726B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		188FD9E52269FE4C0030726B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,7 +255,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		188FDA0E226A0DA50030726B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188FDA15226A0DA50030726B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188FDA1A226A0DB90030726B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188FDA29226A0DF70030726B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188FD9E72269FE4C0030726B /* objc-trampolines */;
+			targetProxy = 188FDA28226A0DF70030726B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		188FD9DF2269FE200030726B /* Debug */ = {
@@ -311,22 +392,6 @@
 			};
 			name = Release;
 		};
-		188FD9E22269FE200030726B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		188FD9E32269FE200030726B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		188FD9EF2269FE4C0030726B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +418,46 @@
 			};
 			name = Release;
 		};
+		188FDA16226A0DA50030726B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		188FDA17226A0DA50030726B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		188FDA24226A0DBA0030726B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		188FDA25226A0DBA0030726B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -365,20 +470,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		188FD9E12269FE200030726B /* Build configuration list for PBXNativeTarget "objc" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				188FD9E22269FE200030726B /* Debug */,
-				188FD9E32269FE200030726B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		188FD9EE2269FE4C0030726B /* Build configuration list for PBXNativeTarget "objc-trampolines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188FD9EF2269FE4C0030726B /* Debug */,
 				188FD9F02269FE4C0030726B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188FDA18226A0DA50030726B /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188FDA16226A0DA50030726B /* Debug */,
+				188FDA17226A0DA50030726B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188FDA23226A0DBA0030726B /* Build configuration list for PBXNativeTarget "objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188FDA24226A0DBA0030726B /* Debug */,
+				188FDA25226A0DBA0030726B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
